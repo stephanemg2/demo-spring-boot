@@ -9,14 +9,14 @@ import java.util.Properties;
 import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest
-class HibernatePropertiesReaderTest {
+class ConfigurationPropertiesReaderTest {
 
     @Autowired
-    private HibernatePropertiesReader hibernatePropertiesReader;
+    private ConfigurationPropertiesReader configurationPropertiesReader;
 
     @Test
     void someMethod() {
-        Properties props = hibernatePropertiesReader.readProperties();
+        Properties props = configurationPropertiesReader.readProperties();
         assertNotNull(props);
     }
 }
